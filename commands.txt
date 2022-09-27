@@ -1,0 +1,34 @@
+Terminal Lab
+
+galaxy-far-far-away % pwd
+software_classwork/galaxy-far-far-away
+galaxy-far-far-away % ls            
+commands.txt    death_star
+galaxy-far-far-away % mkdir tatooine
+galaxy-far-far-away % touch luke.txt ben_kenobi.txt
+galaxy-far-far-away % ls
+ben_kenobi.txt  commands.txt    death_star      luke.txt        tatooine
+galaxy-far-far-away % mv luke.txt tatooine
+galaxy-far-far-away % mv ben_kenobi.txt tatooine
+galaxy-far-far-away % cd tatooine
+tatooine % ls
+ben_kenobi.txt  luke.txt
+tatooine % mkdir millenium_falcon
+tatooine % cd millenium_falcon
+millenium_falcon % touch han_solo.txt chewbaca.txt
+millenium_falcon % ls
+chewbaca.txt    han_solo.txt
+millenium_falcon % cd ..
+tatooine % mv ben_kenobi.txt obi_wan.txt
+tatooine % cd ..
+galaxy-far-far-away % cd death_star
+death_star % ls
+darth_vadar.txt         princess_leia.txt       storm_trooper.txt
+death_star % cp storm_trooper.txt ../tatooine
+death_star % cd ..
+galaxy-far-far-away % ls     
+commands.txt    death_star      tatooine
+alaxy-far-far-away % cd tatooine
+tatooine % ls
+luke.txt                obi_wan.txt
+millenium_falcon        storm_trooper.txt
